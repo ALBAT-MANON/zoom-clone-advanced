@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  padding: 20px;
+  text-align: center;
+}
+
+.video-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.video-box {
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+video {
+  width: 250px;
+  height: 180px;
+  border-radius: 10px;
+  background: black;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #555;
+  box-shadow: 0 0 10px white;
+}
+
+.btn:active {
+  animation: shake 0.4s;
+}
+
+.record {
+  background-color: crimson;
+}
+
+.chatbox {
+  margin-top: 30px;
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.messages {
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: left;
+  padding-right: 10px;
+}
+
+.msg {
+  margin-bottom: 10px;
+}
+
+.msg.me {
+  text-align: right;
+}
+
+.msg .meta {
+  font-size: 0.7em;
+  color: gray;
+}
+
+.chat-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.chat-form input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background: #333;
+  color: white;
+}
+
+.file-share {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.watermark {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.watermark img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}
+
+.creator-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  margin: 8px 0;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s ease;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+/* On focus */
+input:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 10px rgba(33, 150, 243, 0.5);
+  background-color: #fff;
+}
+
+/* Optional: placeholder style */
+input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover {
+  background-color: #555;
+  box-shadow: 0 0 12px 4px white;
+}
+
+/* Shake animation on click */
+button:active {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
+}
